@@ -10,14 +10,14 @@ use yii\widgets\Pjax;
 $this->title = Yii::t('app', 'Products');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="product-index">
+<div class="product-index table-responsive">
 
     <h1><?= Html::encode($this->title) ?></h1>
     <?php Pjax::begin(); ?>
     <?php  //echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a(Yii::t('app', 'Create Product'), ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a(Yii::t('app', 'Create Product'), ['create'], ['class' => 'btn btn-info']) ?>
     </p>
 
     <?= GridView::widget([
